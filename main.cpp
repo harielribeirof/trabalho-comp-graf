@@ -128,6 +128,7 @@ void DesenhaCARACTERISTICAS(void)
     desenhaEsfera(50.0, 150.0, 2.0);
     glColor3f(0.0f,0.0f,0.0f);
     glTranslatef(0.0f, -60.0f, 0.0f);
+    DesenhaTexto("CARACTERÍSTICAS DO VÍRUS", -145, 140);
 
     DesenhaTexto("Coronavirus (COVID-19): doenca infecciosa causada pelo virus SARS-CoV-2.", -145, -50);
     DesenhaTexto("A maioria das pessoas que adoece em decorrencia da COVID-19 apresenta sintomas leves a moderados e se recupera sem tratamento especial. ", -145, -57);
@@ -145,6 +146,7 @@ void DesenhaALFA(void)
     desenhaEsfera(50.0, 150.0, 2.0);
     glColor3f(0.0f,0.0f,0.0f);
     glTranslatef(0.0f, -60.0f, 0.0f);
+    DesenhaTexto("SOBRE A VARIANTE ALFA", -145, 140);
 
     DesenhaTexto("A primeira variante de preocupação, anteriormente chamada de B.1.1.7. Surgiu no Reino Unido em setembro de 2020. Mutacoes: Sao 22 ao todo, entre as ", -145, -50);
     DesenhaTexto("que alteram ou nao a estrutura do virus. As principais estao na espicula, membrana que recobre o virus. Transmissibilidade: de 30\% a 50% maior que a", -145, -57);
@@ -162,6 +164,7 @@ void DesenhaDELTA(void)
     desenhaEsfera(50.0, 150.0, 2.0);
     glColor3f(0.0f,0.0f,0.0f);
     glTranslatef(0.0f, -60.0f, 0.0f);
+    DesenhaTexto("SOBRE A VARIANTE DELTA", -145, 140);
 
     DesenhaTexto("Detectada em outubro de 2020 na India, foi rotulada como variante de preocupação recentemente, em maio. Parece ser a mais contagiosa ate agora.", -145, -50);
     DesenhaTexto("Estima-se que ela seja entre 40 e 60% mais transmissivel do que a Alfa, tanto que acabou provocando surtos onde esta ja era predominante, como ", -145, -57);
@@ -177,6 +180,7 @@ void DesenhaBRASIL()
     desenhaEsfera(50.0, 150.0, 2.0);
     glColor3f(0.0f,0.0f,0.0f);
     glTranslatef(0.0f, -60.0f, 0.0f);
+    DesenhaTexto("DADOS SOBRE O BRASIL", -145, 140);
     DesenhaTexto("BRASIL", -145, -50);
     DesenhaTexto("Total de Casos: 21,7 mi (10% da populacao)", -145, -57);
     DesenhaTexto("Mortes: 604 mil (0,3% da populacao e 0,3% dos infectados)", -145, -64);
@@ -193,6 +197,7 @@ void DesenhaBAHIA(void)
     desenhaEsfera(50.0, 150.0, 2.0);
     glColor3f(0.0f,0.0f,0.0f);
     glTranslatef(0.0f, -60.0f, 0.0f);
+    DesenhaTexto("DADOS SOBRE A BAHIA", -145, 140);
     DesenhaTexto("BRASIL", -145, -50);
     DesenhaTexto("Total de Casos: 1,24 mi (8,2% da populacao)", -145, -57);
     DesenhaTexto("Mortes: 26,9 mil (0,17% da populacao e 2,18% dos infectados)", -145, -64);
@@ -209,6 +214,7 @@ void DesenhaMUNDO(void)
     desenhaEsfera(50.0, 150.0, 2.0);
     glColor3f(0.0f,0.0f,0.0f);
     glTranslatef(0.0f, -60.0f, 0.0f);
+    DesenhaTexto("DADOS SOBRE O MUNDO", -145, 140);
     DesenhaTexto("BRASIL", -145, -50);
     DesenhaTexto("Total de Casos: 219,5 mi (3% da populacao)", -145, -57);
     DesenhaTexto("Mortes: 4,5 mi (0,06% da populacao)", -145, -64);
