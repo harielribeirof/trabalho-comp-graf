@@ -376,6 +376,40 @@ void GerenciaMouse(int button, int state, int x, int y)
     glutPostRedisplay();
 }
 
+void TeclasEspeciais(int key, int x, int y)
+{
+    if(key == GLUT_KEY_UP) {
+           win -= 20;
+           glMatrixMode(GL_PROJECTION);
+           glLoadIdentity();
+           gluOrtho2D (-win, win, -win, win);
+    }
+    if(key == GLUT_KEY_DOWN) {
+           win += 20;
+           glMatrixMode(GL_PROJECTION);
+           glLoadIdentity();
+           gluOrtho2D (-win, win, -win, win);
+    }
+    if (dados<6 && dados>1){
+        if(key == GLUT_KEY_RIGHT) {
+            dados++;
+        }
+        if(key == GLUT_KEY_LEFT) {
+            dados--;
+        }
+    }
+    
+    glutPostRedisplay();
+}
+
+void GerenciaTeclado(unsigned char key, int x, int y)
+{
+    if(key == 27) {
+           exit(1);
+    }
+    glutPostRedisplay();
+}
+
 // Programa Principal
 int main(int argc, char** argv)
 {
@@ -387,6 +421,8 @@ int main(int argc, char** argv)
     glutDisplayFunc(Desenha);
     glutReshapeFunc(AlteraTamanhoJanela);
     glutMouseFunc(GerenciaMouse);
+    glutKeyboardFunc(GerenciaTeclado);
+    glutSpecialFunc(TeclasEspeciais); 
     Inicializa();
     glutMainLoop();
 }
